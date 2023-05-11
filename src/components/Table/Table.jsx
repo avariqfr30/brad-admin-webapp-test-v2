@@ -13,9 +13,9 @@ function createData(name, trackingId, date, status) {
 }
 
 const rows = [
-  createData("Baugette", 18908424, "2 March 2022", "Approved"),
-  createData("Wholewheat Bread", 18908424, "2 March 2022", "Pending"),
-  createData("White Bread", 18908424, "2 March 2022", "Approved"),
+  createData("Baugette", 18908425, "2 March 2022", "Approved"),
+  createData("Wholewheat Bread", 18908524, "2 March 2022", "Pending"),
+  createData("White Bread", 18908600, "2 March 2022", "Approved"),
   createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
 ];
 
