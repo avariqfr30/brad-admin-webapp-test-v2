@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Sidebar.css"; 
 import Logo from "../imgs/logo.png";
 import { UilSignOutAlt } from "@iconscout/react-unicons";
@@ -8,9 +9,10 @@ import { motion } from "framer-motion";
 
 
 const Sidebar = () => {
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(false);
 
   const [expanded, setExpaned] = useState(true)
+
 
   const sidebarVariants = {
     true: {
@@ -26,6 +28,7 @@ const Sidebar = () => {
       <div className="bars" style={expanded?{left: '60%'}:{left: '5%'}} onClick={()=>setExpaned(!expanded)}>
         <UilBars />
       </div>
+
     <motion.div className='sidebar'
     variants={sidebarVariants}
     animate={window.innerWidth<=768?`${expanded}`:''}
