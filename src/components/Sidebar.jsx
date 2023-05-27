@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "./Sidebar.css";
+import "./Sidebar.css"; 
 import Logo from "../imgs/logo.png";
 import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
+
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
@@ -28,6 +29,7 @@ const Sidebar = () => {
     <motion.div className='sidebar'
     variants={sidebarVariants}
     animate={window.innerWidth<=768?`${expanded}`:''}
+    
     >
       {/* logo */}
       <div className="logo">
