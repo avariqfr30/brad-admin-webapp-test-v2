@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "./Cards/Cards";
-import Table from "./Table/Table";
+import Table from "./Table/ProductTable";
 import "./Products.css";
 const Products = () => {
   return (
